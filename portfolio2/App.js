@@ -5,12 +5,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import ExerciseScreen from './ExerciseScreen';
+// import emoji from './emoji.svg';
 
 const Stack = createStackNavigator();
 
- function Instructions() {
+ function Icons() {
     return(
-      <div className="instructions">
+      <div className="icons">
         <img alt="laughing crying emoji" src={emoji} />
         <p>Click on an emoji to view the emoji short name.</p>
       </div>
