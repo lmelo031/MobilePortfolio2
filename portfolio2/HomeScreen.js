@@ -31,24 +31,17 @@ class HomeScreen extends React.Component {
         },
         square: {
           backgroundColor: "#7cb48f",
-          width: 100,
-          height: 100,
+          width: 350,
+          height: 200,
           margin: 4,
         },
         title: {
-            backgroundColor: "#7cb48f",
+            backgroundColor: "lightpink",
             width: 100,
             height: 100,
             margin: 4,
           },
-          header: {
-            backgroundColor: "#7cb48f",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 100,
-            height: 100,
-            margin: 4,
-          },
+          
       });
       
 
