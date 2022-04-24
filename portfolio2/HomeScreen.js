@@ -17,7 +17,7 @@ class HomeScreen extends React.Component {
     </>
         <Text>WELCOME!!</Text>
         <Text>TO THE EXERCISE APP</Text>
-       
+        <View style={styles.square} />
         <Button 
           title="Add some exercise"
           onPress={() =>
