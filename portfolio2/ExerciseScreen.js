@@ -8,6 +8,12 @@ class ExerciseScreen extends React.Component {
       <View style={styles.container}>
         <Text>Add Exercise here!</Text>
         <Button
+          title="leg"
+          onPress={() =>
+            this.props.navigation.navigate('')
+          }
+        />
+        <Button
           title="Back to home"
           onPress={() =>
             this.props.navigation.navigate('Home')
