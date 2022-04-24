@@ -22,7 +22,7 @@ class HomeScreen extends React.Component {
         />
         <>
       <View style={styles.container}>
-        <View style={styles.square} />
+        <View style ={styles.square} />
         <View style={styles.square} />
         <View style={styles.square} />
       </View>
@@ -46,6 +46,12 @@ class HomeScreen extends React.Component {
           height: 100,
           margin: 4,
         },
+        title: {
+            backgroundColor: "#7cb48f",
+            width: 100,
+            height: 100,
+            margin: 4,
+          },
       });
       
 
