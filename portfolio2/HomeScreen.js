@@ -8,7 +8,6 @@ class HomeScreen extends React.Component {
     return (
         
       <View style={styles.container}>
-        <Text style={styles.title}> Welcome</Text>
         <Text style={styles.title}> Hello Square </Text>
         <Button 
           title="Add some exercise"
