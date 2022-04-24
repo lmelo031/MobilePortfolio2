@@ -11,6 +11,9 @@ class HomeScreen extends React.Component {
         <Text style={styles.rectangle}> 
         Welcome to the workout app!! 
         </Text> 
+        <Text style={styles.square}> 
+        Options below!! 
+        </Text>
         <Button 
           title="Add some exercise"
           color="pink"
@@ -39,7 +42,6 @@ class HomeScreen extends React.Component {
             textAlign: 'center',
             padding: 40,
             fontSize: 30,
-        
             
           },          
       });
