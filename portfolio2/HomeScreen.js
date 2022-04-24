@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View,Button } from 'react-native';
+import ExerciseScreen from './ExerciseScreen';
 
 
 class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>You have (undefined) exercise.</Text>
+        <Text>WELCOME!!</Text>
+        <Text>ADD SOME EXERCISE.</Text>
         <Button
           title="Add some exercise"
           onPress={() =>
@@ -20,7 +22,8 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: 'beige',
+      aligntext: 'center',
       alignItems: 'center',
       justifyContent: 'center',
     },
