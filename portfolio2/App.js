@@ -17,6 +17,13 @@ const Stack = createStackNavigator();
       </div>
     );
 }
+function Image() {
+  return (
+    <div>
+      <img src={companyLogo} alt="BigCo Inc. logo"/>
+    </div>
+  );
+}
 
 
 class App extends React.Component {
