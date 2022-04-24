@@ -39,8 +39,8 @@ class HomeScreen extends React.Component {
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            padding: 40,
-            fontSize: 25,
+            padding: 55,
+            fontSize: 21,
             fontFamily: "Times new roman",
             
           },              

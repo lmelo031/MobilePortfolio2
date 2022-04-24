@@ -7,9 +7,15 @@ class ExerciseScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.rectangle}> 
-        Add exercises here!!  
+        ADD EXERCISES HERE!!  
         <div className="Exercise">
-        <input type="checkbox"/>Leg
+        <input type="checkbox"/>Legs
+        <br></br>
+        <input type="checkbox"/>Arms
+        <br></br>
+        <input type="checkbox"/>Abdomen
+        <br></br>
+        <input type="checkbox"/>Butt
         </div>
         </Text> 
         <Button
@@ -39,7 +45,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         textAlign: 'center',
         padding: 40,
-        fontSize: 22,
+        fontSize: 17,
         fontFamily: "Times new roman",
         
       },    
