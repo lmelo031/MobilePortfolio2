@@ -9,6 +9,7 @@ class HomeScreen extends React.Component {
         
       <View style={styles.container}>
         <Text style={styles.rectangle}> Hello Square </Text>
+        
         <Button 
           title="Add some exercise"
           color="pink"
@@ -24,13 +25,13 @@ class HomeScreen extends React.Component {
 
     const styles = StyleSheet.create({
         container: {
-          backgroundColor: "#7CA1B4",
+          backgroundColor: "lightblue",
           flex: 1,
           justifyContent: "center",
           alignItems: "center",
         },
         rectangle: {
-            width: 80 * 2,
+            width: 380,
             height: 180,
             backgroundColor: 'beige',
           },          
