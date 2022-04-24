@@ -10,10 +10,9 @@ class HomeScreen extends React.Component {
       <View style={styles.container}>
         <Text style={styles.rectangle}> 
         Welcome to the workout app!! 
+        <br></br>
+        options
         </Text> 
-        <Text style={styles.square}> 
-        Options below!! 
-        </Text>
         <Button 
           title="Add some exercise"
           color="pink"
@@ -36,14 +35,15 @@ class HomeScreen extends React.Component {
         rectangle: {
             width: 380,
             height: 170,
-            backgroundColor: 'beige',
+            backgroundColor: 'white',
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
             padding: 40,
-            fontSize: 30,
+            fontSize: 20,
+            fontFamily: "Times new roman",
             
-          },          
+          },              
       });
       
 
