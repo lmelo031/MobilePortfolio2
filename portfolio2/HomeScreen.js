@@ -36,6 +36,7 @@ class HomeScreen extends React.Component {
             backgroundColor: 'beige',
             alignItems: 'center',
             justifyContent: 'center',
+            textAlign: 'center',
           },          
       });
       
