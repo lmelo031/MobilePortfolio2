@@ -7,18 +7,17 @@ import HomeScreen from './HomeScreen';
 import ExerciseScreen from './ExerciseScreen';
 
 const Stack = createStackNavigator();
-function Car() {
-  return <h2>I am a Car!</h2>;
+
+ function Instructions() {
+    return(
+      <div className="instructions">
+        <img alt="laughing crying emoji" src={emoji} />
+        <p>Click on an emoji to view the emoji short name.</p>
+      </div>
+    );
 }
 
-function Garage() {
-  return (
-    <>
-      <h1>Who lives in my Garage?</h1>
-      <Car />
-    </>
-  );
-}
+
 class App extends React.Component {
   render() {
     return (
