@@ -6,7 +6,15 @@ import ExerciseScreen from './ExerciseScreen';
 class HomeScreen extends React.Component {
   render() {
     return (
+        
       <View style={styles.container}>
+          <>
+      <View style={styles.container}>
+        <View style={styles.square} />
+        <View style={styles.square} />
+        <View style={styles.square} />
+      </View>
+    </>
         <Text>WELCOME!!</Text>
         <Text>TO THE EXERCISE APP</Text>
        
@@ -17,13 +25,7 @@ class HomeScreen extends React.Component {
           }
     
         />
-        <>
-      <View style={styles.container}>
-        <View style={styles.square} />
-        <View style={styles.square} />
-        <View style={styles.square} />
-      </View>
-    </>
+        
     
       </View>
     );
