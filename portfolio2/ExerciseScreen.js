@@ -7,10 +7,8 @@ class ExerciseScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>ADD EXERCISE HERE!</Text>
-        <div className="App">
-        <div className="topping">
-        <input type="checkbox" id="topping" name="topping" value="Paneer" />Paneer
-        </div>
+        <div className="Exercise">
+        <input type="checkbox"/>Leg
         </div>
         <Button
           title="Back to Home"
@@ -25,7 +23,7 @@ class ExerciseScreen extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'beige',
+      backgroundColor: 'lightblue',
       alignItems: 'center',
       justifyContent: 'center',
       padding: 20,
