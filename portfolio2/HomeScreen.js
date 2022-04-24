@@ -8,7 +8,7 @@ class HomeScreen extends React.Component {
     return (
         
       <View style={styles.container}>
-        <Text style={styles.rectangle}> Hello Square </Text>
+        <Text style={styles.rectangle}> Welcome to the Workout App!! </Text>
         
         <Button 
           title="Add some exercise"
@@ -27,15 +27,15 @@ class HomeScreen extends React.Component {
         container: {
           backgroundColor: "lightblue",
           flex: 1,
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: 'center',
+          alignItems: 'center',
         },
         rectangle: {
             width: 380,
-            height: 180,
+            height: 170,
             backgroundColor: 'beige',
-            alignItems: "center",
-            justifyContent: "center",
+            alignItems: 'center',
+            justifyContent: 'center',
           },          
       });
       
