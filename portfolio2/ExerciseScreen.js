@@ -11,6 +11,7 @@ class ExerciseScreen extends React.Component {
           title="leg"
           onPress={() =>
             this.props.navigation.navigate('')
+            
           }
         />
         <Button
