@@ -7,9 +7,9 @@ export default function ExerciseScreen() {
         <View style={StyleSheet.container}>
             <Text>Adding Exercises here!</Text>
             <StatusBar style="auto"/>
-            <Button title="Back to Home"
+            <Button title="Back to Start"
             onPress={() =>
-                this.props.navigation.navigate('Home')
+                this.props.navigation.navigate('Start')
             }
             />
 
