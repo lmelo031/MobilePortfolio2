@@ -8,24 +8,23 @@ class HomeScreen extends React.Component {
     return (
         
       <View style={styles.container}>
-          <>
+        <Text>WELCOME!!</Text>
+        <Text>to the workout app</Text>
+        <Button 
+          title="Add some exercise"
+          color="pink"
+          onPress={() =>
+            this.props.navigation.navigate('Exercise')
+          }
+    
+        />
+        <>
       <View style={styles.container}>
         <View style={styles.square} />
         <View style={styles.square} />
         <View style={styles.square} />
       </View>
     </>
-        <Text>WELCOME!!</Text>
-        <Text>TO THE EXERCISE APP</Text>
-        <View style={styles.square} />
-        <Button 
-          title="Add some exercise"
-          onPress={() =>
-            this.props.navigation.navigate('Exercise')
-          }
-    
-        />
-        
     
       </View>
     );
