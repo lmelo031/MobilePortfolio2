@@ -35,7 +35,7 @@ class HomeScreen extends React.Component {
         rectangle: {
             width: 380,
             height: 170,
-            backgroundColor: 'white',
+            backgroundColor: 'beige',
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
