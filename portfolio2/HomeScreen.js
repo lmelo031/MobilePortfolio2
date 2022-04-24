@@ -8,15 +8,15 @@ class HomeScreen extends React.Component {
     return (
         
       <View style={styles.container}>
-        <Text style={styles.rectangle}> Welcome to the Workout App!! </Text>
-        
+        <Text style={styles.rectangle}> 
+        Welcome to the Workout App!! 
+        </Text> 
         <Button 
           title="Add some exercise"
           color="pink"
           onPress={() =>
             this.props.navigation.navigate('Exercise')
           }
-    
         />
       </View>
     );
