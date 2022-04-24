@@ -16,6 +16,8 @@ class ExerciseScreen extends React.Component {
         <input type="checkbox"/>Abdomen
         <br></br>
         <input type="checkbox"/>Butt
+        <br></br>
+        <input type="submit"></input>
         </div>
         </Text> 
         <Button
@@ -44,7 +46,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
-        padding: 40,
+        padding: 30,
         fontSize: 17,
         fontFamily: "Times new roman",
         
