@@ -40,7 +40,7 @@ class HomeScreen extends React.Component {
             justifyContent: 'center',
             textAlign: 'center',
             padding: 40,
-            fontSize: 30,
+            fontSize: 25,
             fontFamily: "Times new roman",
             
           },              
