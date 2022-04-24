@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View,Button } from 'react-native';
-
+import HomeScreen from './HomeScreen';
 class ExerciseScreen extends React.Component {
   render() {
     return (
@@ -16,7 +16,15 @@ class ExerciseScreen extends React.Component {
     );
   }
 }
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
 
-// ...
+
 
 export default ExerciseScreen;
