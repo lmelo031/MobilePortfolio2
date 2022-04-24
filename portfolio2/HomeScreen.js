@@ -38,6 +38,11 @@ class HomeScreen extends React.Component {
             justifyContent: 'center',
             textAlign: 'center',
             margin: 10,
+            fontWeight: 'bold',
+            fontSize: 18,
+            marginTop: 0,
+            width: 200,
+   
             
           },          
       });
