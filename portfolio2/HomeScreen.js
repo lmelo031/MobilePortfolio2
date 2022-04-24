@@ -9,7 +9,7 @@ class HomeScreen extends React.Component {
       <View style={styles.container}>
         <Text>WELCOME!!</Text>
         <Text>TO THE EXERCISE APP</Text>
-        <Button
+        <Button 
           title="Add some exercise"
           onPress={() =>
             this.props.navigation.navigate('Exercise')
@@ -28,6 +28,14 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       
     },
+     Button: {
+        flex: 2,
+        Color: 'pink',
+        aligntext: 'center',
+        alignItems: 'center',
+        justifyContent: 'center',
+        
+      },
   });
 
 
