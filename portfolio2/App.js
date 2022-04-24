@@ -6,7 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import ExerciseScreen from './ExerciseScreen';
 // import emoji from './emoji.svg';
-import image from './assets/imageexercise';
+// import image from './assets/imageexercise';
+
 
 const Stack = createStackNavigator();
 
@@ -18,14 +19,15 @@ const Stack = createStackNavigator();
       </div>
     );
 }
-function image() {
-  return (
-    <div>
-      <img src={imageexercise}/>
-    </div>
-  );
+function Image() {
+      return (
+          <div>
+              <section className="exercise logo">
+                  <img src={image.exercise.jpeg} />
+              </section>
+          </div>
+      );
 }
-
 
 class App extends React.Component {
   render() {
