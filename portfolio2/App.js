@@ -1,11 +1,10 @@
-import 'react-native-gesture-handler';
+
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { FriendsContext } from './FriendsContext';
 import HomeScreen from './HomeScreen';
-import FriendsScreen from './FriendsScreen';
+import ExerciseScreen from './ExerciseScreen';
 
 const Stack = createStackNavigator();
 
@@ -43,15 +42,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <FriendsContext.Provider
-        value={
-          {
-            currentFriends: this.state.currentFriends,
-            possibleFriends: this.state.possibleFriends,
-            addFriend: this.addFriend
-          }
-        }
-      >
+      
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen
@@ -59,12 +50,11 @@ class App extends React.Component {
               component={HomeScreen}
             />
             <Stack.Screen
-              name="Friends"
-              component={FriendsScreen}
+              name="Exercise"
+              component={ExerciseScreen}
             />
           </Stack.Navigator>
         </NavigationContainer>
-      </FriendsContext.Provider>
     );
   }
 }
