@@ -6,7 +6,7 @@ class ExerciseScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Add Exercise here!</Text>
+        <Text>ADD EXERCISE HERE!</Text>
         <Button
           title="leg"
           onPress={() =>
@@ -14,7 +14,7 @@ class ExerciseScreen extends React.Component {
           }
         />
         <Button
-          title="Back to home"
+          title="Back to Home"
           onPress={() =>
             this.props.navigation.navigate('Home')
           }
@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'beige',
       alignItems: 'center',
       justifyContent: 'center',
+      padding: 20,
     },
   });
 
