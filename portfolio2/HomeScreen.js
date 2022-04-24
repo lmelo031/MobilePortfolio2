@@ -9,7 +9,7 @@ class HomeScreen extends React.Component {
         
       <View style={styles.container}>
         <Text style={styles.rectangle}> 
-        Welcome to the Workout App!! 
+        Welcome to the workout app!! 
         </Text> 
         <Button 
           title="Add some exercise"
@@ -37,12 +37,9 @@ class HomeScreen extends React.Component {
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            margin: 10,
-            fontWeight: 'bold',
-            fontSize: 18,
-            marginTop: 0,
-            width: 200,
-   
+            padding: 40,
+            fontSize: 30,
+        
             
           },          
       });
