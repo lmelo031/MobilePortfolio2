@@ -9,34 +9,42 @@ class HomeScreen extends React.Component {
       <View style={styles.container}>
         <Text>WELCOME!!</Text>
         <Text>TO THE EXERCISE APP</Text>
+       
         <Button 
           title="Add some exercise"
           onPress={() =>
             this.props.navigation.navigate('Exercise')
           }
+    
         />
+        <>
+      <View style={styles.container}>
+        <View style={styles.square} />
+        <View style={styles.square} />
+        <View style={styles.square} />
+      </View>
+    </>
+    
       </View>
     );
   }
 }
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: 'beige',
-      aligntext: 'center',
-      alignItems: 'center',
-      justifyContent: 'center',
+
+    const styles = StyleSheet.create({
+        container: {
+          backgroundColor: "#7CA1B4",
+          flex: 1,
+          justifyContent: "center",
+          alignItems: "center",
+        },
+        square: {
+          backgroundColor: "#7cb48f",
+          width: 100,
+          height: 100,
+          margin: 4,
+        },
+      });
       
-    },
-     Button: {
-        flex: 2,
-        Color: 'pink',
-        aligntext: 'center',
-        alignItems: 'center',
-        justifyContent: 'center',
-        
-      },
-  });
 
 
 export default HomeScreen;
