@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import ExerciseScreen from './ExerciseScreen';
 // import emoji from './emoji.svg';
+import image from './assets/imageexercise';
 
 const Stack = createStackNavigator();
 
@@ -20,7 +21,7 @@ const Stack = createStackNavigator();
 function Image() {
   return (
     <div>
-      <img src={companyLogo} alt="BigCo Inc. logo"/>
+      <img src={imageexercise}/>
     </div>
   );
 }
