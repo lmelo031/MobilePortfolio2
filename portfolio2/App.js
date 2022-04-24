@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './HomeScreen';
 import ExerciseScreen from './ExerciseScreen';
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
 class App extends React.Component {
   constructor(props) {
