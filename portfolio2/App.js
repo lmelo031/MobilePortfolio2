@@ -18,7 +18,7 @@ const Stack = createStackNavigator();
       </div>
     );
 }
-function Image() {
+function image() {
   return (
     <div>
       <img src={imageexercise}/>
