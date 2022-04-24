@@ -1,29 +1,72 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
 import React from 'react';
-import HomeScreen from './HomeScreen';
-import ExerciseScreen from './ExerciseScreen';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { FriendsContext } from './FriendsContext';
+import HomeScreen from './HomeScreen';
+import FriendsScreen from './FriendsScreen';
 
 const Stack = createStackNavigator();
 
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      possibleFriends: [
+        'Alice',
+        'Bob',
+        'Sammy',
+      ],
+      currentFriends: [],
+    }
+  }
 
-export default function App() {
-  return (
-    <NavigationContainer>
+  addFriend = (index) => {
+    const {
+      currentFriends,
+      possibleFriends,
+    } = this.state
+
+    // Pull friend out of possibleFriends
+    const addedFriend = possibleFriends.splice(index, 1)
+
+    // And put friend in currentFriends
+    currentFriends.push(addedFriend)
+
+    // Finally, update the app state
+    this.setState({
+      currentFriends,
+      possibleFriends,
+    })
+  }
+
+  render() {
+    return (
+      <FriendsContext.Provider
+        value={
+          {
+            currentFriends: this.state.currentFriends,
+            possibleFriends: this.state.possibleFriends,
+            addFriend: this.addFriend
+          }
+        }
+      >
+        <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen
               name="Home"
               component={HomeScreen}
             />
             <Stack.Screen
-              name="Exercise"
-              component={ExerciseScreen}
+              name="Friends"
+              component={FriendsScreen}
             />
           </Stack.Navigator>
         </NavigationContainer>
-  );
+      </FriendsContext.Provider>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -34,3 +77,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
