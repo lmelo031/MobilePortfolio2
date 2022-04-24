@@ -11,7 +11,7 @@ class HomeScreen extends React.Component {
         <Text style={styles.rectangle}> 
         Welcome to the workout app!! 
         <br></br>
-        <b>options</b>
+        <b>Start here today!! </b>
         </Text> 
         <Button 
           title="Add some exercise"
