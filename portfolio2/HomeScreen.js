@@ -9,7 +9,9 @@ class HomeScreen extends React.Component {
         
       <View style={styles.container}>
         <Text>WELCOME!!</Text>
+        <View style={styles.square}/>
         <Text>to the workout app</Text>
+    
         <Button 
           title="Add some exercise"
           color="pink"
