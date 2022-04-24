@@ -7,13 +7,11 @@ class ExerciseScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text>ADD EXERCISE HERE!</Text>
-        <Button
-          title="leg"
-          onPress={() =>
-            this.props.navigation.navigate('')
-            
-          }
-        />
+        <div className="App">
+        <div className="topping">
+        <input type="checkbox" id="topping" name="topping" value="Paneer" />Paneer
+        </div>
+        </div>
         <Button
           title="Back to Home"
           onPress={() =>
